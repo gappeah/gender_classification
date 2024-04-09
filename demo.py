@@ -2,10 +2,19 @@
 
 from sklearn import tree
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
 
 clf = tree.DecisionTreeClassifier()
 
-#create 3 more classifiers...
+# Create a K-Nearest Neighbors Classifier
+clf_knn = KNeighborsClassifier()
+
+# Create a Random Forest Classifier
+clf_rf = RandomForestClassifier()
+
+# Create a Support Vector Machine Classifier
+clf_svm = SVC()
 
 
 
