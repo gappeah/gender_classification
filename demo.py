@@ -5,7 +5,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 
-clf = tree.DecisionTreeClassifier()
+clf_tree = tree.DecisionTreeClassifier()
 
 # Create a K-Nearest Neighbors Classifier
 clf_knn = KNeighborsClassifier()
@@ -26,9 +26,12 @@ x = [[181, 80, 9], [177, 70, 8], [160, 60, 2], [154, 54, 5], [166, 65, 7], [190,
 y = ['male', 'male', 'female', 'female', 'male', 'male', 'female']
 
 
-clf = clf.fit(x,y)
+clf_tree.fit(x, y)
+clf_knn.fit(x, y)
+clf_rf.fit(x, y)
+clf_svm.fit(x, y)
 
-prediction = clf.predict([[190, 70, 8]])
-
-print(prediction)
+# Make a prediction using the Decision Tree Classifier
+prediction = clf_tree.predict([[190, 70, 8]])
+print("Decision Tree Prediction:", prediction)
 
