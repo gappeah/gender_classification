@@ -16,9 +16,6 @@ clf_rf = RandomForestClassifier()
 # Create a Support Vector Machine Classifier
 clf_svm = SVC()
 
-
-
-
 # [height, weight, shoe_size]
 
 x = [[181, 80, 9], [177, 70, 8], [160, 60, 2], [154, 54, 5], [166, 65, 7], [190, 90, 8], [175, 64, 6]]
