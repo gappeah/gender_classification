@@ -1,4 +1,4 @@
-# Gender Classification Project
+# Gender Classification
 
 This is a simple data science project aimed at classifying gender based on physical characteristics such as height, weight, and shoe size. The project utilizes popular machine learning classifiers from the scikit-learn library in Python.
 
